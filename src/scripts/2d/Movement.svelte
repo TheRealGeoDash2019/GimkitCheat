@@ -110,7 +110,7 @@
     on:input={onSpeedupMultChange} bind:value={speedupMultiplier} />
     <ToggleButton disabled={!$storesLoaded} onText="Speedup: On" offText="Speedup: Off"
     on:click={(e) => enableSpeedup(e.detail)} bind:enabled={speedupEnabled} hotkeyId="speedup" />
-    <Slider title="Jump Boost Amount" min={1} max={maxSpeedupMultiplier} step={0.005}
+    <Slider title="Jump Boost Amount" min={1} max={maxSpeedupMultiplier*1.2} step={0.005}
     on:input={onJumpboostMultChange} bind:value={jumpboostMultiplier} />
     <ToggleButton disabled={!$physicsConsts} onText="Jump Boost: On" offText="Jump Boost: Off"
     on:click={(e) => enableJumpboost(e.detail)} bind:enabled={jumpboostEnabled} hotkeyId="jumpboost" />
